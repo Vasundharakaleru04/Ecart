@@ -1,12 +1,12 @@
 import { useEffect, useState} from "react";
-import "./Mobiles.css";
+import "./Laptops.css";
 import axios from "axios";
 const Mobiles =()=> {
-    const[mobiles,setmobiles] = useState([]);
+    const [mobiles,setMobiles] = useState([]);
     const get_mobiles = async ()=>{
         const res = await axios.get("http://localhost:3000/mobiles");
         const {data} = res;
-        setmobiles(data);
+        setMobiles(data);
     }
     useEffect(()=>{
         get_mobiles();
@@ -22,7 +22,7 @@ return(
                 <div className="child"> 
                  <img src={element.pimage}></img>
                 <h3><i className="fa fa-rupee"></i> {element.pcost}</h3>
-                <p>{element.pqty}</p>
+                <p>Qty:{element.pqty}</p>
                 </div>
             )
         })

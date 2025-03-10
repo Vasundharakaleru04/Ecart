@@ -22,7 +22,7 @@ return(
                 <div className="child"> 
                 <img src={element.pimage}></img>
                 <h3><i className="fa fa-rupee"></i> {element.pcost}</h3>
-                <p>{element.pqty}</p>
+                <p>Qty:{element.pqty}</p>
                 </div>
             )
         })

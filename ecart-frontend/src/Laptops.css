@@ -1,13 +1,15 @@
 .parent{
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 10px;
 }
 .child{
     border: 1px solid gray;
+    padding: 10px;
     border-radius: 20px;
-    height: 350px;
-    padding:5px;
+}
+
+img{
+    width: 250px
 }
